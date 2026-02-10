@@ -1,0 +1,52 @@
+<section id="crop-year-page" data-title="ثبت سال زراعی" data-breadcrumb="خانه / داده‌های اولیه / ثبت سال زراعی"
+    class="max-w-6xl mx-auto">
+    <!-- هدر کوچک صفحه -->
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+        <div>
+            <h3 class="text-lg vazirmatn-700 text-[#2B1B1B]">انتخاب سال زراعی</h3>
+            <p class="text-sm vazirmatn-400 text-black/60 mt-1">
+                سال را انتخاب کنید و با «سال زراعی جدید» به جدول اضافه کنید.
+            </p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <select
+                id="cropYearSelect"
+                title="انتخاب سال زراعی"
+                class="min-w-44 py-2 px-3 rounded-xl border border-black/10 bg-white/80 outline-0 focus:border-[#452829]/40 transition"
+                >
+                             
+                <option value="1404">1404</option>
+                <option value="1405">1405</option>
+            </select>
+            <button id="addCropYearBtn" class="py-2 px-4 rounded-xl bg-[#1A5276] text-[#FFFFFF] hover:opacity-90 transition">
+                سال زراعی جدید
+            </button>
+
+        </div>
+    </div>
+
+    <!-- جدول -->
+    <div class="bg-white/80 backdrop-blur rounded-2xl border border-black/5 shadow-sm overflow-hidden">
+        <div class="px-4 py-3 border-b border-black/5 flex items-center justify-between">
+            <span class="text-sm vazirmatn-600 text-[#452829]">لیست سال‌های زراعی</span>
+            <span id="cropYearCount" class="text-xs text-black/50"></span>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+                <thead class="bg-black/5">
+                    <tr class="text-right">
+                        <th class="px-4 py-3 vazirmatn-600 text-[#452829] whitespace-nowrap">سال زراعی</th>
+                        <th class="px-4 py-3 vazirmatn-600 text-[#452829] whitespace-nowrap">تاریخ ایجاد</th>
+                        <th class="px-4 py-3 vazirmatn-600 text-[#452829] whitespace-nowrap">عملیات</th>
+                    </tr>
+                </thead>
+
+                <tbody id="cropYearTbody" class="divide-y divide-black/5">
+                    <!-- ردیف‌ها با JS ساخته می‌شن -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

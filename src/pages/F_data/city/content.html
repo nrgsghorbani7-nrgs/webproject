@@ -1,0 +1,56 @@
+<section id="city-page" data-title="ثبت شهرستان" data-breadcrumb="خانه / داده‌های اولیه / ثبت شهرستان"
+    class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+        <div>
+            <h3 class="text-lg vazirmatn-700 text-[#2B1B1B]">ثبت شهرستان بر اساس استان</h3>
+            <p class="text-sm vazirmatn-400 text-black/60 mt-1">
+                ابتدا استان را انتخاب کنید، سپس شهرستان‌های همان استان نمایش داده می‌شوند.
+            </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-3">
+            <select id="provinceForCitySelect"
+                class="min-w-56 py-2 px-3 rounded-xl border border-black/10 bg-white/80 outline-0 focus:border-[#452829]/40 transition"
+                title="انتخاب استان">
+                <option value="">انتخاب استان...</option>
+                <!-- با JS از localStorage استان‌ها پر می‌شود -->
+            </select>
+
+            <select id="citySelect"
+                class="min-w-56 py-2 px-3 rounded-xl border border-black/10 bg-white/80 outline-0 focus:border-[#452829]/40 transition"
+                title="انتخاب شهرستان" disabled>
+                <option value="">اول استان را انتخاب کنید</option>
+            </select>
+
+            <button id="addCityBtn"
+                class="py-2 px-4 rounded-xl bg-[#1A5276] text-[#FFFFFF] hover:opacity-90 transition disabled:opacity-50"
+                disabled>
+                ثبت شهرستان
+            </button>
+        </div>
+    </div>
+
+    <div class="bg-white/80 backdrop-blur rounded-2xl border border-black/5 shadow-sm overflow-hidden">
+        <div class="px-4 py-3 border-b border-black/5 flex items-center justify-between">
+            <span class="text-sm vazirmatn-600 text-[#452829]">لیست شهرستان‌ها</span>
+            <span id="cityCount" class="text-xs text-black/50"></span>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+                <thead class="bg-black/5">
+                    <tr class="text-right">
+                        <th class="px-4 py-3 vazirmatn-600 text-[#452829] whitespace-nowrap">استان</th>
+                        <th class="px-4 py-3 vazirmatn-600 text-[#452829] whitespace-nowrap">شهرستان</th>
+                        <th class="px-4 py-3 vazirmatn-600 text-[#452829] whitespace-nowrap">تاریخ ایجاد</th>
+                        <th class="px-4 py-3 vazirmatn-600 text-[#452829] whitespace-nowrap">عملیات</th>
+                    </tr>
+                </thead>
+
+                <tbody id="cityTbody" class="divide-y divide-black/5">
+                    <!-- ردیف‌ها با JS ساخته می‌شن -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

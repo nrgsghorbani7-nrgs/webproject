@@ -1,0 +1,104 @@
+*{
+    direction: rtl;
+}
+.Almarai-100 {
+  font-family: "Almarai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.Almarai-200 {
+  font-family: "Almarai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.Almarai-300 {
+  font-family: "Almarai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.Almarai-400 {
+  font-family: "Almarai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.Almarai-500 {
+  font-family: "Almarai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.Almarai-600 {
+  font-family: "Almarai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.Almarai-700 {
+  font-family: "Almarai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.Almarai-800 {
+  font-family: "Almarai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.Almari-900 {
+  font-family: "Almarai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.accr .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+}
+
+/* اسکرول‌بار منوی کناری */
+#menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+#menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#menu::-webkit-scrollbar-thumb {
+  background-color: rgba(69, 40, 41, 0.35);
+  /* هم‌رنگ سایت */
+  border-radius: 999px;
+}
+
+#menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(69, 40, 41, 0.6);
+}
+
+body {
+  background-color: #F8F9FA;
+}
+
+#menu * {
+  font-family: 'Almarai', sans-serif !important;
+}
+
+/* در هر جای فایل CSS اضافه کن */
+#page-title {
+  font-family: 'Almarai', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+#breadcrumb {
+  font-family: 'Almarai', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+#page-container * {
+  font-family: 'Almarai', sans-serif !important;
+}
